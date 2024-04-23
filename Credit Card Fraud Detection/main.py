@@ -8,7 +8,7 @@ from sklearn.metrics import precision_score, recall_score
 from sklearn.metrics import f1_score, matthews_corrcoef
 from sklearn.metrics import confusion_matrix
 
-df = pd.read_csv('Credit Card Fraud Detection/creditcard.csv')
+df = pd.read_csv('Credit Card Fraud Detection/creditcard.csv') # https://www.kaggle.com/mlg-ulb/creditcardfraud/download
 fraud = df[df['Class'] == 1]
 valid = df[df['Class'] == 0]
 X = df.drop(['Class'], axis=1)
